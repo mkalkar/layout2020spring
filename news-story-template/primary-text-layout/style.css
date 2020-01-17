@@ -26,21 +26,34 @@
 
 body{
   font-family: sans-serif;
-}
-
-#content p{
-   text-align: justify;
-   text-align: left;
-   /* margin-right: 100px;
-   margin-left: 100px:  */
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
 .main_story{
-  margin-left: 100px;
-  margin-right: 100px;
+
 }
 
-#mainimg{
- width: 100%;
+#imgmain{
+  width: 100%;
+}
 
+
+.other_img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  margin-top: 10px;
+
+}
+
+.relatedItems{
+  display:flex;
+  background-color: blue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
