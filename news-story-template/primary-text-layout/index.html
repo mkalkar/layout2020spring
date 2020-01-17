@@ -3,35 +3,38 @@
   <head>
     <title>News Story Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <style>[v-cloak] { display: none; }</style>
   </head>
   <body>
     <div id="news-template" v-cloak>
 
       <!-- Main Story -->
-      {{ story.title }}
-      {{ story.subtitle }}
-      {{ story.date }}
-      <span v-for="tag in story.tags">{{ tag }}</span>
-      <img v-bind:src="story.image.url">
+      <div class=main_story>
+      <div id= head> {{ story.title }} </div>
+      <div id= subtitle>{{ story.subtitle }}</div>
+      <div id=date>  {{ story.date }} </div>
+      <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+      <div ><img id =mainimg  v-bind:src="story.image.url"> </div>
       {{ story.image.caption }}
       <a v-bind:href="story.source.url">{{ story.source.name }}</a>
       <span v-html="story.teaser"></span>
-      <span v-html="story.content"></span>
+      <span id= content v-html="story.content"></span>
+    </div>
 
       <!-- Related Stories-->
-      <ul>
+      <!-- <ul>
         <li v-for="relatedStory in relatedStories">
           <div v-on:click="load(relatedStory)">
             {{ relatedStory.title }}
             <img v-bind:src="relatedStory.image.url">
           </div>
         </li>
-      </ul>
+      </ul> -->
 
       <!-- Useful debugging info, you can comment this section out when you don't need it. -->
-      <pre>The story object: {{ story | json }}</pre>
-      <pre>The relatedStories array: {{ relatedStories | json }}</pre>
+      <!-- <pre>The story object: {{ story | json }}</pre>
+      <pre>The relatedStories array: {{ relatedStories | json }}</pre> -->
 
     </div>
 

@@ -1,3 +1,46 @@
-#news-template {
-  background-color: red;
+#head{
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+   text-align: justify;
+
+}
+
+#subtitle{
+  color: black;
+  font-size: 20px;
+   text-align: justify;
+}
+
+#date{
+  color: black;
+  font-size: 15px;
+   text-align: justify;
+}
+
+#tag{
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+#content p{
+   text-align: justify;
+   text-align: left;
+   /* margin-right: 100px;
+   margin-left: 100px:  */
+}
+
+.main_story{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#mainimg{
+ width: 100%;
+
 }
