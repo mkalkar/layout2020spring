@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Story Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>[v-cloak] { display: none; }</style>
+  </head>
+  <body>
+    <div id="news-template" v-cloak>
 
+      <!-- Main Story -->
+
+      <div class=main_story>
+      <div id= head> {{ story.title }} </div>
+      <div id= subtitle>{{ story.subtitle }}</div>
+      <div id=date>  {{ story.date }} </div>
+      <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+      <img id = imgmain v-bind:src="story.image.url">
+      {{ story.image.caption }}
+      <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+      <span v-html="story.teaser"></span>
+      <span id= content v-html="story.content"></span>
+    </div>
+
+
+
+      <!-- Related Stories-->
+
+
+      <ul class="relatedItems">
+        <li v-for="relatedStory in relatedStories">
+          <div v-on:click="load(relatedStory)">
+            {{ relatedStory.title }}
+            <img class=other_img v-bind:src="relatedStory.image.url">
+          </div>
+        </li>
+      </ul>
+
+
+
+      <!-- Useful debugging info, you can comment this section out when you don't need it. -->
+      <!-- <pre>The story object: {{ story | json }}</pre>
+      <pre>The relatedStories array: {{ relatedStories | json }}</pre> -->
+
+
+  </div>
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+  </body>
+</html>
