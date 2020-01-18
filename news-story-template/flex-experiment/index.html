@@ -16,6 +16,7 @@
       <h4 id= subtitle>{{ story.subtitle }}</h4>
       <div id=date>  {{ story.date }} </div>
       <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+      <hr>
       <img id = imgmain v-bind:src="story.image.url">
       {{ story.image.caption }}
       <a v-bind:href="story.source.url">{{ story.source.name }}</a>
@@ -26,12 +27,12 @@
 
 
       <!-- Related Stories-->
-
+      <hr>
 
       <ul class="relatedItems">
         <li v-for="relatedStory in relatedStories">
           <div class= img_container v-on:click="load(relatedStory)">
-            {{ relatedStory.title }}
+            <div class=relatedtext>{{ relatedStory.title }}</div>
             <img class=other_img v-bind:src="relatedStory.image.url">
           </div>
         </li>
