@@ -12,14 +12,14 @@
       <!-- Main Story -->
 
       <div class=main_story>
-      <div id= head> {{ story.title }} </div>
-      <div id= subtitle>{{ story.subtitle }}</div>
+      <h1 id= head> {{ story.title }} </h1>
+      <h4 id= subtitle>{{ story.subtitle }}</h4>
       <div id=date>  {{ story.date }} </div>
       <span id= tag v-for="tag in story.tags">{{ tag }}</span>
       <img id = imgmain v-bind:src="story.image.url">
       {{ story.image.caption }}
       <a v-bind:href="story.source.url">{{ story.source.name }}</a>
-      <span v-html="story.teaser"></span>
+      <span class= "teaser" v-html="story.teaser"></span>
       <span id= content v-html="story.content"></span>
     </div>
 
@@ -30,7 +30,7 @@
 
       <ul class="relatedItems">
         <li v-for="relatedStory in relatedStories">
-          <div v-on:click="load(relatedStory)">
+          <div class= img_container v-on:click="load(relatedStory)">
             {{ relatedStory.title }}
             <img class=other_img v-bind:src="relatedStory.image.url">
           </div>
