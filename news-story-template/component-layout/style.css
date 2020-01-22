@@ -3,11 +3,30 @@ body{
 }
 
 .component{
-
+ padding-top: 30px;
+ padding-bottom: 30px;
 }
 
 .safe-area{
+  max-width: 84%;
+  margin: auto;
+  /* splits left over of max width and puts as margin
+  try using this for your project*/
+  width: 800px;
+  /* wont get larger than 800
+  fluid transition*/
+}
 
+header{
+  background-color: lightgrey;
+}
+
+footer{
+  background-color: grey;
+}
+
+.componentpink{
+  background-color: pink;
 }
 
 /* selects first thing in safe area */
@@ -19,7 +38,12 @@ body{
   margin-bottom: 0;
 }
 
-/* same as
-*{
-  margin:0;
-} */
+/*more specific and wins  */
+header.component{
+  padding:0;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
