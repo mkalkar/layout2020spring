@@ -15,6 +15,7 @@ body{
   width: 800px;
   /* wont get larger than 800
   fluid transition*/
+
 }
 
 header{
@@ -41,9 +42,21 @@ footer{
 /*more specific and wins  */
 header.component{
   padding:0;
+  position: relative;
 }
 
 img{
     width: 100%;
     max-width: 100%;
+}
+
+header.component img{
+  position: absolute;
+  top: 0;
+
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* scale to fit basically... */
 }
