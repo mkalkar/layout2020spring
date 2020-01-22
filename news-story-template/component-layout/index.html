@@ -4,13 +4,19 @@
 <head>
   <title> News Story Template</title>
   <link href = "style.css" rel = "stylesheet">
+  <style>[v-cloak] { display: none; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+  <div id="news-template" v-cloak>
   <header class="component">
-    <img src="random.jpg">
-    <div class="safe-area">
-      <h1> This is a header</h1>
+    <img id = imgmain v-bind:src="story.image.url">
+    <div class="safe-area" id=headerText>
+        <h1 id= head> {{ story.title }} </h1>
+        <h4 id= subtitle>{{ story.subtitle }}</h4>
+        <div id=date>  {{ story.date }} </div>
+        <span id= tag v-for="tag in story.tags">{{ tag }}</span>
       <!-- margin here will spill out of container sometimes  -->
 
     </div>
@@ -19,38 +25,38 @@
 
   <section class="componentpink">
     <div class="safe-area" >
-      <p>McConnell made some last-minute changes: He unveiled a revised
-        organizing resolution to set the rules for the impeachment trial after
-        an uproar from Democrats and concerns from some Republicans. Now, each
-        side will get 24 hours for opening arguments spread over three days,
-        instead of two, and House evidence will be admitted unless there is
-        a vote in opposition to it.</p>
-      <p>Amendments were introduced: Senate Minority Leader Chuck
-        Schumer has introduced three amendments — all requesting relevant
-        documents from the White House, State Department and Office of Budget
-        and Management. The Senate voted along party lines to table, or kill,
-        the amendments. When the trial comes back
-        from break, they'll hear debate on Schumer's fourth amendment.</p>
-      <p>GOP senator hints at support for witnesses: Sen. Susan Collins,
-        a Republican from Maine, issued a statement today saying it is
-        “likely” that she will support a motion
-        to subpoena witnesses later in the trial after both sides
-        present their cases.</p>
+        {{ story.image.caption }}
+        <a v-bind:href="story.source.url">{{ story.source.name }}</a>
     </div>
   </section>
-
+  <br>
+  <hr>
   <section class="component">
+
     <div class="safe-area">
-      <p>This is a section 2</p>
+      <span class= "teaser" v-html="story.teaser"></span>
+      <span id= content v-html="story.content"></span>
     </div>
   </section>
+  <hr>
     <footer class="component">
       <div class="safe-area">
-        <p>This is a footer</p>
+        <ul class="relatedItems">
+          <li v-for="relatedStory in relatedStories">
+            <div class= img_container v-on:click="load(relatedStory)">
+              <div class=relatedtext>{{ relatedStory.title }}</div>
+              <img class=other_img v-bind:src="relatedStory.image.url">
+            </div>
+          </li>
+        </ul>
       </div>
 
   </footer>
+  </div>
 
+  <!-- Scripts here are what load the Vue library, and the actual story content. -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
 </body>
 
 

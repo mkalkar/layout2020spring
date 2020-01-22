@@ -70,8 +70,6 @@ ul {
 
 li{
   margin: 9px;
-  width: 501px;
-  height: 446px;
   text-align: center;
 }
 
@@ -133,7 +131,7 @@ li{
    }
 
    h3{
-     font-size: 85%;
+     flex-grow
    } */
 
 }
@@ -144,4 +142,8 @@ li{
 
 .img_container{
 
+}
+
+.relatedItems{
+  font-size: 20px;
 }
