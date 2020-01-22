@@ -25,20 +25,24 @@
 
   <section class="componentpink">
     <div class="safe-area" >
-        {{ story.image.caption }}
-        <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+        <p class="caption"> {{ story.image.caption }}
+          <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+         </p>
+
+        <hr>
     </div>
+
   </section>
-  <br>
-  <hr>
+
   <section class="component">
 
     <div class="safe-area">
       <span class= "teaser" v-html="story.teaser"></span>
       <span id= content v-html="story.content"></span>
+      <hr>
     </div>
   </section>
-  <hr>
+
     <footer class="component">
       <div class="safe-area">
         <ul class="relatedItems">
