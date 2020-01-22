@@ -1,13 +1,13 @@
 h1{
   color: black;
-  text-align: justify;
+  /* text-align: justify; */
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
   line-height:1.3;
 }
 
 h6{
   color: grey;
-  text-align: justify;
+  /* text-align: justify; */
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
   line-height:1.3;
 
