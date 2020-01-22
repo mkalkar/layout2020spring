@@ -9,3 +9,17 @@ body{
 .safe-area{
 
 }
+
+/* selects first thing in safe area */
+.safe-area > :first-child{
+  margin-top: 0;
+}
+
+.safe-area > :last-child{
+  margin-bottom: 0;
+}
+
+/* same as
+*{
+  margin:0;
+} */
