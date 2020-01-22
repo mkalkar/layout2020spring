@@ -41,7 +41,7 @@ footer{
 
 /*more specific and wins  */
 header.component{
-  padding:0;
+  /* padding:0; */
   position: relative;
 }
 
@@ -59,4 +59,13 @@ header.component img{
   height: 100%;
   object-fit: cover;
   /* scale to fit basically... */
+  /* object-position: top left; */
+  /* pinned by upper left corner if you want */
+}
+
+header .safe-area{
+  position: relative;
+  /* no longer static now the safe area w text gets to be in front*/
+  min-height: calc(400px);
+  /* explore what calc does */
 }
