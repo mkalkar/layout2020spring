@@ -167,19 +167,25 @@ li{
   margin: 0;
 }
 
-#date, #tag{
+#date, #tag, #source{
   /* background-color: lightgrey; */
-  border-style: solid;
-  border-width:: .2px;
-  border-color: lightgrey;
+
   margin-right: 5px;
+  border: solid;
+  border-width: 1px;
+  padding: 5px;
 }
 
 h2{
   color: grey;
 }
 
-#imgmain{
+/* #imgmain{
   border-style: solid;
   border-width: thin;
+} */
+
+a{
+  color: black;
+  text-decoration: none;
 }

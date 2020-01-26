@@ -15,8 +15,8 @@
         <h1 id= head> {{ story.title }} </h1>
         <h4 id= subtitle>{{ story.subtitle }}</h4>
         <!-- <div id=date>  </div> -->
-        <span id=date>{{ story.date }} </span>
-        <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+        <!-- <span id=date>{{ story.date }} </span>
+        <span id= tag v-for="tag in story.tags">{{ tag }}</span> -->
 
 
       <!-- margin here will spill out of container sometimes  -->
@@ -28,8 +28,11 @@
   <section class="componentpink">
     <div class="safe-area" >
       <img id = imgmain v-bind:src="story.image.url">
+
         <p class="caption"> {{ story.image.caption }}
-          <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+          <span id=date>  {{ story.date }} </span>
+          <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+          <a id= source v-bind:href="story.source.url">{{ story.source.name }}</a>
          </p>
 
         <hr>
