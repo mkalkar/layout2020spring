@@ -89,7 +89,9 @@ ul {
 
 .relatedItems{
   display:flex;
-  text-align: center;
+  /* text-align: center; */
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
 }
 
 li{
@@ -101,6 +103,7 @@ li{
   margin: 5px;
   overflow: hidden;
   text-align: left;
+
 
 }
 
@@ -149,4 +152,8 @@ li{
 .caption{
   font-weight: bold;
   font-size: 17px;
+}
+
+.img_container{
+  width: 300px;
 }
