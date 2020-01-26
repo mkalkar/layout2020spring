@@ -2,6 +2,7 @@ body{
   margin: 0;
   line-height:1.5;
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(248,248,248);
 }
 
 .component{
@@ -128,6 +129,7 @@ li{
   .relatedItems{
     display: inline-block;
     text-align: center;
+
   }
 
   li{
@@ -141,10 +143,11 @@ li{
     margin-top: 20px;
 
 
+
   }
 
   footer .safe-area{
-    text-align: center;
+    /* text-align: center; */
 
 
   }
