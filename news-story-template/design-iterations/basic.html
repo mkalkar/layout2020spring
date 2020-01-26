@@ -11,12 +11,14 @@
 <body>
   <div id="news-template" v-cloak>
   <header class="component">
-    <img id = imgmain v-bind:src="story.image.url">
     <div class="safe-area" id=headerText>
         <h1 id= head> {{ story.title }} </h1>
         <h4 id= subtitle>{{ story.subtitle }}</h4>
-        <div id=date>  {{ story.date }} </div>
+        <!-- <div id=date>  </div> -->
+        <span id=date>{{ story.date }} </span>
         <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+
+
       <!-- margin here will spill out of container sometimes  -->
 
     </div>
@@ -25,6 +27,7 @@
 
   <section class="componentpink">
     <div class="safe-area" >
+      <img id = imgmain v-bind:src="story.image.url">
         <p class="caption"> {{ story.image.caption }}
           <a v-bind:href="story.source.url">{{ story.source.name }}</a>
          </p>
@@ -45,6 +48,7 @@
 
     <footer class="component">
       <div class="safe-area">
+        <h2> Related Stories </h2>
         <ul class="relatedItems">
           <li v-for="relatedStory in relatedStories">
             <div class= img_container v-on:click="load(relatedStory)">

@@ -23,12 +23,12 @@ body{
 
 header{
   /* background-color: lightgrey; */
-  color: white;
+  color: black;
 }
 
-/* footer{
-  background-color: grey;
-} */
+footer.component{
+  padding: 0px;
+}
 
 .componentpink{
   /* background-color: pink; */
@@ -46,7 +46,8 @@ header{
 /*more specific and wins  */
 header.component{
   /* padding:0; */
-  position: relative;
+  /* position: relative; */
+  margin: 0;
 }
 
 img{
@@ -55,22 +56,22 @@ img{
 }
 
 header.component img{
-  position: absolute;
+  /* position: absolute; */
   top: 0;
 
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   /* scale to fit basically... */
   /* object-position: top left; */
   /* pinned by upper left corner if you want */
 }
 
 header .safe-area{
-  position: relative;
+  /* position: relative; */
   /* no longer static now the safe area w text gets to be in front*/
-  min-height: calc(400px);
+
   /* explore what calc does */
 }
 
@@ -81,9 +82,9 @@ ul {
 }
 
 #headerText{
-  background-color: black;
-  opacity: .7;
-  height: 100px;
+  /* background-color: black; */
+  /* opacity: .7; */
+
 
 }
 
@@ -91,7 +92,7 @@ ul {
   display:flex;
   /* text-align: center; */
   flex-wrap: wrap;
-  background-color: DodgerBlue;
+  /* background-color: DodgerBlue; */
 }
 
 li{
@@ -115,10 +116,11 @@ li{
 
 }
 .relatedtext{
-  font-size: 18px;
+  font-size: 17px;
   background-color: rgb(232,232,232);
   color: black;
   font-weight: bold;
+  padding: 8px;
 
 }
 
@@ -156,4 +158,25 @@ li{
 
 .img_container{
   width: 300px;
+}
+
+#head, #subtitle{
+  margin: 0;
+}
+
+#date, #tag{
+  /* background-color: lightgrey; */
+  border-style: solid;
+  border-width:: .2px;
+  border-color: lightgrey;
+  margin-right: 5px;
+}
+
+h2{
+  color: grey;
+}
+
+#imgmain{
+  border-style: solid;
+  border-width: thin;
 }
