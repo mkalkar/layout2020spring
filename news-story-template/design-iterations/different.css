@@ -4,6 +4,10 @@ body{
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
 }
 
+#imgmain{
+  filter: brightness(60%) contrast(90%);
+}
+
 .component{
  padding-top: 30px;
  padding-bottom: 30px;
@@ -24,6 +28,7 @@ body{
 header{
   /* background-color: lightgrey; */
   color: white;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
 
 /* footer{
@@ -31,7 +36,7 @@ header{
 } */
 
 .componentpink{
-  /* background-color: pink; */
+  margin-top: 12px;
 }
 
 /* selects first thing in safe area */
@@ -71,6 +76,9 @@ header .safe-area{
   position: relative;
   /* no longer static now the safe area w text gets to be in front*/
   min-height: calc(400px);
+  /* margin-top: 75px; */
+  left: 30px;
+  top: 70px;
   /* explore what calc does */
 }
 
@@ -81,15 +89,15 @@ ul {
 }
 
 #headerText{
-  background-color: black;
-  opacity: .7;
-  height: 100px;
+
+
 
 }
 
 .relatedItems{
   display:flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 li{
@@ -112,10 +120,11 @@ li{
 
 }
 .relatedtext{
-  font-size: 18px;
+  font-size: 17px;
   background-color: rgb(232,232,232);
   color: black;
   font-weight: bold;
+  padding: 8px;
 
 }
 
@@ -149,4 +158,25 @@ li{
 .caption{
   font-weight: bold;
   font-size: 17px;
+
+}
+
+
+
+.teaser{
+  font-weight: bold;
+}
+
+#date, #tag, #source{
+  /* background-color: lightgrey; */
+
+  margin-right: 5px;
+  border: solid;
+  border-width: 1px;
+  padding: 5px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
 }
