@@ -2,8 +2,6 @@ body{
   margin: 0;
   line-height:1.5;
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
-  background-color: rgb(245,245,245);
-
 }
 
 .component{
@@ -85,7 +83,7 @@ ul {
 #headerText{
   background-color: black;
   opacity: .7;
-  /* height: 100px; */
+  height: 100px;
 
 }
 
