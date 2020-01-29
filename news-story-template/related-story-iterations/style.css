@@ -1,0 +1,35 @@
+body{
+  margin:0;
+  width: 90%;
+  margin: 100px auto;
+}
+
+.related-stories{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 20px -20px
+}
+
+.related-story{
+  /* max-width: 480px;
+  min-width: 340px; */
+  width: 20%;
+  min-width: 240px;
+  display: block;
+  margin: 0;
+  /* width: 100%; */
+  flex: 1 1 auto;
+  margin: 20px 20px 20px 20px;;
+}
+
+.related-stories img{
+  width: 100%;
+  display: block;
+}
+
+.divider{
+  height: 10px;
+  background: black;
+}
