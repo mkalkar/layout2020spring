@@ -1,0 +1,16 @@
+{
+  "entrypoints": [
+    {
+      "name": "something",
+      "file": "bold.html"
+    },
+    {
+      "name": "something1",
+      "file": "basic.html"
+    },
+    {
+      "name": "something2",
+      "file": "different.html"
+    }
+  ]
+}
