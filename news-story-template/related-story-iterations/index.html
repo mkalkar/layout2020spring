@@ -10,7 +10,7 @@
     <div id="news-template" v-cloak>
 
       <!-- Main Story -->
-      <!-- {{ story.title }}
+      <!-- <div class=title> {{ story.title }} </div>
       {{ story.subtitle }}
       {{ story.date }}
       <span v-for="tag in story.tags">{{ tag }}</span>
@@ -22,12 +22,17 @@
 
       <!-- Related Stories-->
       <div class="divider"></div>
+      <!-- ul is flex container -->
       <ul class="related-stories">
+        <!-- we also want each li as a flex container -->
         <li class="related-story" v-for="relatedStory in relatedStories">
-          <div v-on:click="load(relatedStory)">
+          <div class="title" v-on:click="load(relatedStory)">
             {{ relatedStory.title }}
-            <img v-bind:src="relatedStory.image.url">
-          </div>
+            </div>
+            <div class="thumbnail">
+              <img v-bind:src="relatedStory.image.url">
+            </div>
+
         </li>
       </ul>
       <div class="divider"></div>
