@@ -1,26 +1,91 @@
 body{
   margin: 0;
+  width: 90%;
+  margin: 100px auto;
+  margin-top: 0;
   line-height:1.5;
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
   background-color: rgb(248,248,248);
 }
 
+.related-stories{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 20px -20px
+}
+
+.related-story{
+  /* max-width: 480px;
+  min-width: 340px; */
+  width: 20%;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  /* width: 100%; */
+  flex: 1 1 auto;
+  margin: 20px 20px 20px 20px;
+  /* border: 1px solid; */
+  /* border-color: grey;
+
+  background-color: rgb(255,255,255); */
+  /* padding: 10px; */
+  /* box-shadow: 3px -1px 18px 3px rgba(71,70,71,0.75); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.related-story:hover{
+  opacity: .7;
+}
+
+.related-stories img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  object-fit: cover;
+
+  /* height: 0; */
+
+}
+
+.related-story .thumbnail{
+  padding-bottom: 60%;
+  position: relative;
+}
+
+.related-story .title{
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.divider{
+  height: 10px;
+  background: black;
+}
+
+
+
+
+
 .component{
- padding-top: 30px;
+ padding-top: 15px;
  padding-bottom: 30px;
 }
 
-.safe-area{
+/* .safe-area{
   max-width: 84%;
   margin: auto;
-  /* splits left over of max width and puts as margin
-  try using this for your project*/
   width: 800px;
-  /* wont get larger than 800
-  fluid transition*/
   font-size: 20px;
 
-}
+} */
 
 header{
   /* background-color: lightgrey; */
@@ -80,11 +145,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  height: 250px;
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
 }
 
 #headerText{
@@ -95,25 +155,21 @@ ul {
 }
 
 .relatedItems{
-
+  display:flex;
   /* text-align: center; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   /* background-color: DodgerBlue; */
-    /* width: 25%; */
-  /* overflow: scroll: */
 }
 
 li{
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 238px;
   /* border-style: solid;
   border-color: grey;
   border-width: .01px; */
-  /* margin: 5px; */
-  /* overflow: hidden; */
-  text-align: left;
-  display: inline-block;
   margin: 5px;
+  overflow: hidden;
+  text-align: left;
 
 
 }
@@ -122,25 +178,16 @@ li{
 .other_img{
   object-fit: contain;
   max-width:100%;
-  display: block;
-
 
 
 }
-.relatedtext{
-  font-size: 15px;
+/* .title{
   background-color: rgb(232,232,232);
   color: black;
   font-weight: bold;
   padding: 8px;
-  width: 300px;
-  height: 30px;
-  /* object-fit: scale-down; */
-  /* overflow: inherit; */
 
-
-
-}
+} */
 
 @media screen and (max-width: 550px){
   .relatedItems{
@@ -150,20 +197,25 @@ li{
   }
 
   li{
-    /* width: 400px;
-    height: 268px; */
+    width: 400px;
+    height: 268px;
     /* border-style: solid;
     border-color: grey;
     border-width: .01px; */
     overflow: hidden;
     text-align: left;
-    /* margin-top: 20px;
-    margin-right: 5px; */
-    margin: 5px;
+    margin-top: 20px;
+
+
+
   }
+
   footer .safe-area{
     /* text-align: center; */
+
+
   }
+
 }
 
 .caption{
@@ -173,15 +225,10 @@ li{
 
 .img_container{
   width: 300px;
-  display: block;
-  height: 200px;
-  overflow: hidden;
-  margin-right: 10px;
-  /* overflow: scroll; */
 }
 
-#head, #subtitle{
-  margin: 0;
+#subtitle{
+  margin-top:8px;
 }
 
 #date, #tag, #source{
@@ -205,4 +252,9 @@ h2{
 a{
   color: black;
   text-decoration: none;
+}
+
+.teaser{
+  font-weight: bold;
+
 }
