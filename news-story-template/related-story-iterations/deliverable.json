@@ -1,12 +1,12 @@
 {
   "entrypoints": [
     {
-      "name": "v1",
+      "name": "bottom",
       "file": "bottomWrap.html"
     },
     {
-      "name": "v2",
-      "file": "basic.html"
+      "name": "scroll",
+      "file": "scroll.html"
     },
     {
       "name": "v3",

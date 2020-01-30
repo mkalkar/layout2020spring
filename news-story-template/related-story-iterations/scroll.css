@@ -1,0 +1,212 @@
+body{
+  margin: 0;
+  line-height:1.5;
+  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(248,248,248);
+}
+
+.component{
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+
+.safe-area{
+  max-width: 84%;
+  margin: auto;
+  /* splits left over of max width and puts as margin
+  try using this for your project*/
+  width: 800px;
+  /* wont get larger than 800
+  fluid transition*/
+  font-size: 20px;
+
+}
+
+header{
+  /* background-color: lightgrey; */
+  color: black;
+}
+
+footer.component{
+  padding: 0px;
+}
+
+.componentpink{
+  /* background-color: pink; */
+}
+
+/* selects first thing in safe area */
+.safe-area > :first-child{
+  margin-top: 0;
+}
+
+.safe-area > :last-child{
+  margin-bottom: 0;
+}
+
+/*more specific and wins  */
+header.component{
+  /* padding:0; */
+  /* position: relative; */
+  margin: 0;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+header.component img{
+  /* position: absolute; */
+  top: 0;
+
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* scale to fit basically... */
+  /* object-position: top left; */
+  /* pinned by upper left corner if you want */
+}
+
+header .safe-area{
+  /* position: relative; */
+  /* no longer static now the safe area w text gets to be in front*/
+
+  /* explore what calc does */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#headerText{
+  /* background-color: black; */
+  /* opacity: .7; */
+
+
+}
+
+.relatedItems{
+
+  /* text-align: center; */
+  /* flex-wrap: wrap; */
+  /* background-color: DodgerBlue; */
+    /* width: 25%; */
+  /* overflow: scroll: */
+}
+
+li{
+  width: 300px;
+  height: 300px;
+  /* border-style: solid;
+  border-color: grey;
+  border-width: .01px; */
+  /* margin: 5px; */
+  /* overflow: hidden; */
+  text-align: left;
+  display: inline-block;
+  margin: 5px;
+
+
+}
+
+
+.other_img{
+  object-fit: contain;
+  max-width:100%;
+  display: block;
+
+
+}
+.relatedtext{
+  font-size: 15px;
+  background-color: rgb(232,232,232);
+  color: black;
+  font-weight: bold;
+  padding: 8px;
+  width: 300px;
+  height: 30px;
+  overflow: auto;
+
+
+
+}
+
+@media screen and (max-width: 550px){
+  .relatedItems{
+    display: inline-block;
+    text-align: center;
+
+  }
+
+  li{
+    /* width: 400px;
+    height: 268px; */
+    /* border-style: solid;
+    border-color: grey;
+    border-width: .01px; */
+    overflow: hidden;
+    text-align: left;
+    /* margin-top: 20px;
+    margin-right: 5px; */
+    margin: 5px;
+
+
+  }
+
+  footer .safe-area{
+    /* text-align: center; */
+
+
+  }
+
+}
+
+.caption{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.img_container{
+  width: 300px;
+  display: block;
+  height: 200px;
+  overflow: hidden;
+  margin-right: 10px;
+  /* overflow: scroll; */
+}
+
+#head, #subtitle{
+  margin: 0;
+}
+
+#date, #tag, #source{
+  /* background-color: lightgrey; */
+
+  margin-right: 5px;
+  border: solid;
+  border-width: 1px;
+  padding: 5px;
+}
+
+h2{
+  color: grey;
+}
+
+/* #imgmain{
+  border-style: solid;
+  border-width: thin;
+} */
+
+a{
+  color: black;
+  text-decoration: none;
+}
