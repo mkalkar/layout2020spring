@@ -52,13 +52,12 @@
     <!-- we also want each li as a flex container -->
     <li class="related-story" v-for="relatedStory in relatedStories">
 
-      <div class="title" v-on:click="load(relatedStory)">
-        {{ relatedStory.title }}
-        </div>
         <div class="thumbnail">
           <img v-bind:src="relatedStory.image.url">
         </div>
-
+        <div class="title" v-on:click="load(relatedStory)">
+          {{ relatedStory.title }}
+          </div>
     </li>
   </ul>
 </div>
