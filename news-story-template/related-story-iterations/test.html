@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> News Story Template</title>
+  <link href = "test.css" rel = "stylesheet">
+  <style>[v-cloak] { display: none; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div id="news-template" v-cloak>
+    <div class=left>
+  <header class="component">
+    <div class="safe-area" id=headerText>
+        <h1 id= head> {{ story.title }} </h1>
+        <h4 id= subtitle>{{ story.subtitle }}</h4>
+        <!-- <div id=date>  </div> -->
+        <!-- <span id=date>{{ story.date }} </span>
+        <span id= tag v-for="tag in story.tags">{{ tag }}</span> -->
+
+
+      <!-- margin here will spill out of container sometimes  -->
+
+    </div>
+
+  </header>
+
+  <section class="componentpink">
+    <div class="safe-area" >
+      <img id = imgmain v-bind:src="story.image.url">
+
+        <p class="caption"> {{ story.image.caption }}
+          <span id=date>  {{ story.date }} </span>
+          <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+          <a id= source v-bind:href="story.source.url">{{ story.source.name }}</a>
+         </p>
+
+        <hr>
+    </div>
+
+  </section>
+
+  <section class="component">
+
+    <div class="safe-area">
+      <span class= "teaser" v-html="story.teaser"></span>
+      <span id= content v-html="story.content"></span>
+      <hr>
+    </div>
+  </section>
+</div>
+
+    <div class=right>
+    <footer class="component_footer">
+      <div class="safe-area">
+        <h2> Related Stories </h2>
+        <ul class="relatedItems">
+          <li v-for="relatedStory in relatedStories">
+            <div class= img_container v-on:click="load(relatedStory)">
+              <div class=relatedtext>{{ relatedStory.title }}</div>
+              <img class=other_img v-bind:src="relatedStory.image.url">
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+  </footer>
+  </div>
+  </div>
+
+  <!-- Scripts here are what load the Vue library, and the actual story content. -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+</body>
+
+
+</html>

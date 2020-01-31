@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> News Story Template</title>
+  <link href = "style.css" rel = "stylesheet">
+  <style>[v-cloak] { display: none; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="news-template" v-cloak>
+  <header class="component">
+    <img id = imgmain v-bind:src="story.image.url">
+    <div class="safe-area" id=headerText>
+        <h1 id= head> {{ story.title }} </h1>
+        <h4 id= subtitle>{{ story.subtitle }}</h4>
+
+      <!-- margin here will spill out of container sometimes  -->
+
+    </div>
+
+  </header>
+
+  <section class="componentpink">
+    <div class="safe-area" >
+        <p class="caption"> {{ story.image.caption }}
+          <a id= source v-bind:href="story.source.url">{{ story.source.name }}</a>
+          <span id=date>  {{ story.date }} </span>
+          <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+         </p>
+
+        <hr>
+    </div>
+
+  </section>
+
+  <section class="component">
+
+    <div class="safe-area">
+      <span class= "teaser" v-html="story.teaser"></span>
+      <span id= content v-html="story.content"></span>
+      <hr>
+    </div>
+  </section>
+
+  <footer class="component">
+  <div class="safe-area">
+  <h2> Related Stories </h2>
+  <!-- ul is flex container -->
+  <ul class="related-stories">
+    <!-- we also want each li as a flex container -->
+    <li class="related-story" v-for="relatedStory in relatedStories">
+
+      <div class="title" v-on:click="load(relatedStory)">
+        {{ relatedStory.title }}
+        </div>
+        <div class="thumbnail">
+          <img v-bind:src="relatedStory.image.url">
+        </div>
+
+    </li>
+  </ul>
+</div>
+</footer>
+  </div>
+
+  <!-- Scripts here are what load the Vue library, and the actual story content. -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+</body>
+
+
+</html>

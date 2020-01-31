@@ -9,7 +9,7 @@
   <body>
     <div id="news-template" v-cloak>
 
-
+      <div class="box">
       <!-- Main Story -->
       <header class="component">
         <div class="safe-area" id=headerText>
@@ -25,6 +25,7 @@
         </div>
 
       </header>
+
 
       <section class="componentpink">
         <div class="safe-area" >
@@ -49,8 +50,10 @@
           <hr>
         </div>
       </section>
+    </div>
 
       <!-- Related Stories-->
+      <div class="box">
       <footer class="component">
       <div class="safe-area">
       <h2> Related Stories </h2>
@@ -65,6 +68,7 @@
             <div class="thumbnail">
               <img v-bind:src="relatedStory.image.url">
             </div>
+          </div>
 
         </li>
       </ul>
