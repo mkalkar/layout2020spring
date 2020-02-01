@@ -78,7 +78,11 @@ header .safe-area{
   min-height: calc(400px);
   /* margin-top: 75px; */
   left: 30px;
-  top: 70px;
+  top: 50px;
+  bottom:10px;
+  object-fit: contain;
+  text-overflow: ellipsis;
+  margin-bottom: 40px;
   /* explore what calc does */
 }
 
@@ -86,12 +90,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-#headerText{
-
-
-
 }
 
 /* .relatedItems{
@@ -191,6 +189,7 @@ a{
   margin: auto;
   width: 800px; */
   width:100%;
+
 }
 
 .related-story{
@@ -200,11 +199,14 @@ a{
   min-width: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  background-color: white;
+
+  /* justify-content: space-between; */
   margin: 0;
   /* width: 100%; */
   flex: 1 1 auto;
   margin: 20px 20px 20px 20px;
+  position: relative;
   /* border: 1px solid; */
   /* border-color: grey;
 
@@ -227,6 +229,8 @@ a{
   position: absolute;
   object-fit: cover;
 
+  margin-bottom: 0;
+
   /* height: 0; */
 
 }
@@ -234,17 +238,29 @@ a{
 .related-story .thumbnail{
   padding-bottom: 60%;
   position: relative;
+
+
 }
 
 .related-story .title{
   /* margin-bottom: 10px; */
   font-weight: bold;
+  /* position: relative; */
   font-size: 13px;
-  /* padding: 8px; */
+
+  /* margin-top: 0; */
+  padding: 8px;
+  position: relative;
+  color: grey;
+  /* padding-top: 0; */
 
 }
 
 .divider{
   height: 10px;
   background: black;
+}
+
+h2{
+  color: grey;
 }
