@@ -96,6 +96,7 @@ header .safe-area{
   object-fit: contain;
   text-overflow: ellipsis;
   margin-bottom: 40px;
+  padding: 10px
   /* explore what calc does */
 }
 
@@ -328,4 +329,12 @@ footer{
 .icons{
   float: right;
   margin-top: -7px;
+}
+
+@media screen and (max-width: 550px){
+  .icons{
+    float: none;
+    display: block;
+    margin-top: 25px;
+  }
 }
