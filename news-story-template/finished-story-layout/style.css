@@ -17,36 +17,19 @@ body{
 .safe-area{
   max-width: 84%;
   margin: auto;
-  /* splits left over of max width and puts as margin
-  try using this for your project*/
   width: 800px;
-  /* wont get larger than 800
-  fluid transition*/
   font-size: 20px;
-
 }
-
-
-/* div#middle.safe-area{
-  margin-bottom: 20px;
-} */
 
 header{
-  /* background-color: lightgrey; */
   color: white;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
-
-/* footer{
-  background-color: grey;
-} */
 
 .componentpink{
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-/* selects first thing in safe area */
 .safe-area > :first-child{
   margin-top: 0;
 }
@@ -55,9 +38,7 @@ header{
   margin-bottom: 0;
 }
 
-/*more specific and wins  */
 header.component{
-  /* padding:0; */
   position: relative;
 }
 
@@ -75,10 +56,6 @@ header.component img{
   height: 100%;
   object-fit: cover;
   object-position: center top;
-
-  /* scale to fit basically... */
-  /* object-position: top left; */
-  /* pinned by upper left corner if you want */
 }
 
 p.caption{
@@ -87,17 +64,12 @@ p.caption{
 
 header .safe-area{
   position: relative;
-  /* no longer static now the safe area w text gets to be in front*/
   min-height: calc(400px);
-  /* margin-top: 75px; */
-  /* left: 30px;
-  top: 50px; */
   bottom:10px;
   object-fit: contain;
   text-overflow: ellipsis;
   margin-bottom: 40px;
-  padding: 10px
-  /* explore what calc does */
+  padding: 15px;
 }
 
 ul {
@@ -105,66 +77,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-/* .relatedItems{
-  display:flex;
-  text-align: center;
-  flex-wrap: wrap;
-} */
-
-/* li{
-  width: 500px;
-  height: 238px;
-  /* border-style: solid;
-  border-color: grey;
-  border-width: .01px; */
-  /* margin: 5px;
-  overflow: hidden;
-  text-align: left;
-
-} */
-
-
-/* .other_img{
-  object-fit: contain;
-  max-width:100%;
-} */
-
-/* .relatedtext{
-  font-size: 17px;
-  background-color: rgb(232,232,232);
-  color: black;
-  font-weight: bold;
-  padding: 8px;
-
-} */
-
-/* @media screen and (max-width: 550px){
-  .relatedItems{
-    display: inline-block;
-    text-align: center;
-  }
-
-  li{
-    width: 400px;
-    height: 268px;
-    /* border-style: solid;
-    border-color: grey;
-    border-width: .01px; */
-    /* overflow: hidden;
-    text-align: left;
-    margin-top: 20px; */
-
-
-  /* } */
-
-  /* footer .safe-area{
-    text-align: center;
-
-
-  }
-
-}  */
 
 .caption{
   font-weight: bold;
@@ -178,14 +90,10 @@ ul {
 }
 
 #date, #tag, #source{
-  /* background-color: lightgrey; */
-
   margin-right: 5px;
   border: solid;
   border-width: 1px;
   padding: 5px;
-
-  /* padding-bottom: 30px; */
 }
 
 a{
@@ -197,43 +105,25 @@ a{
   display: inline-flex;
   margin: 0;
   padding: 0;
-  /* flex-wrap: wrap; */
   margin: 20px -20px;
   overflow-x: scroll;
-  /* max-width: 84%;
-  margin: auto;
-  width: 800px; */
-  width:100%;
   margin-top: 0;
   margin-left: 4px;
 
 }
 
 .related-story{
-  /* max-width: 480px;
-  min-width: 340px; */
   width: 20%;
   min-width: 240px;
   display: flex;
   flex-direction: column;
   background-color: white;
-
-  /* justify-content: space-between; */
   margin: 0;
-  /* width: 100%; */
   flex: 1 1 auto;
   margin: 20px 20px 20px 0px;
-
   position: relative;
-  /* border: 1px solid; */
-  /* border-color: grey;
-
   background-color: rgb(255,255,255); */
-  /* padding: 10px; */
-  /* box-shadow: 3px -1px 18px 3px rgba(71,70,71,0.75); */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-
-
 }
 
 .related-story:hover{
@@ -246,32 +136,20 @@ a{
   display: block;
   position: absolute;
   object-fit: cover;
-
   margin-bottom: 0;
-
-  /* height: 0; */
-
 }
 
 .related-story .thumbnail{
   padding-bottom: 60%;
   position: relative;
-
-
 }
 
 .related-story .title{
-  /* margin-bottom: 10px; */
   font-weight: bold;
-  /* position: relative; */
   font-size: 13px;
-
-  /* margin-top: 0; */
   padding: 8px;
   position: relative;
   color: grey;
-  /* padding-top: 0; */
-
 }
 
 .divider{
@@ -286,13 +164,11 @@ h2{
 .arrow{
   width: 30px;
   height: 30px;
-  /* float: right; */
 }
 
 #left{
   transform: scaleX(-1);
   float: right;
-  /* margin-top: -20px; */
 }
 
 #right{
@@ -336,5 +212,6 @@ footer{
     float: none;
     display: block;
     margin-top: 25px;
+    margin-right:5px;
   }
 }
