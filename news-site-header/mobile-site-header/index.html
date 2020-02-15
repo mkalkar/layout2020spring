@@ -10,18 +10,23 @@
 
     <!-- Site Header -->
     <div id="news-site-header">
-      <div class= v-on:click="toggleTheHamburgerMenu()">hamburger</div>
+      <div v-on:click="toggleTheHamburgerMenu()"><img class="button" src="hamburger.png"></div>
       <div v-show="menuIsOpen">
         <nav>
-          <ul>
-            <li id=test>
+          <ul class=menu>
+            <li class=menuItem>
+              <a href="#">I am a menu item!</a>
+            </li>
+            <li class=menuItem>
+              <a href="#">I am a menu item!</a>
+            </li>
+            <li class=menuItem>
               <a href="#">I am a menu item!</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
-
 
     <div id="news-template" v-cloak>
     <header class="component">
@@ -80,9 +85,11 @@
             </div>
       </li>
     </ul>
-  </div>
-  </footer>
     </div>
+    </footer>
+    </div>
+
+
 
 
     <!-- Scripts here are what load the Vue library, and the actual story content. -->
