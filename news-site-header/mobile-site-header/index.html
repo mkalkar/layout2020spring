@@ -113,3 +113,205 @@
 
   </body>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Story Template</title>
+    <style>[v-cloak] { display: none; } img {max-width: 100%;}</style>
+    <link href = "style.css" rel = "stylesheet">
+  </head>
+  <body>
+    <!-- Site Header -->
+        <header id="news-site-header">
+        <div v-on:click="toggleTheHamburgerMenu()"><img class="button" src="hamburger.png"></div>
+          <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
+            <div v-show="menuIsOpen">
+            <nav>
+              <ul>
+                <li class="expandable">
+                  <div class=menuItem ><a href="#">News</a></div>
+                  <ul>
+                    <li>
+                      <a href="#">Headlines</a>
+                    </li>
+                    <li>
+                      <a href="#">Politics</a>
+                    </li>
+                    <li>
+                      <a href="#">Science</a>
+                    </li>
+                    <li>
+                      <a href="#">Entertainment</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class=menuItem ><a href="#">Opinion</a></div>
+                  <ul>
+                    <li>
+                      <a href="#">Columns</a>
+                    </li>
+                    <li>
+                      <a href="#">Letters</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <ul>
+                    <li>
+                      <a href="#">Baseball</a>
+                    </li>
+                    <li>
+                      <a href="#">Football</a>
+                    </li>
+                    <li>
+                      <a href="#">Basketball</a>
+                    </li>
+                    <li>
+                      <a href="#">Hockey</a>
+                    </li>
+                    <li>
+                      <a href="#">Soccer</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+    <!-- Site Header -->
+    <!-- <div id="news-site-header">
+      <div v-on:click="toggleTheHamburgerMenu()"><img class="button" src="hamburger.png"></div>
+      <div v-show="menuIsOpen">
+        <nav>
+          <ul class=menu>
+            <li class=menuItem>
+              <a href="#">Politics</a>
+            </li>
+            <li class=menuItem>
+              <a href="#">Science</a>
+            </li>
+            <li class=menuItem>
+              <a href="#">International</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+
+    <div id="news-template" v-cloak>
+    <header class="component">
+      <img id = imgmain v-bind:src="story.image.url">
+      <div class="safe-area" id=headerText>
+          <h1 id= head> {{ story.title }} </h1>
+          <h4 id= subtitle>{{ story.subtitle }}</h4>
+
+        <!-- margin here will spill out of container sometimes  -->
+
+    </div>
+    </header>
+
+    <section class="componentpink">
+      <div class="safe-area" >
+          <p class="caption"> {{ story.image.caption }}
+            <a id= source v-bind:href="story.source.url">{{ story.source.name }}</a>
+            <span id=date>  {{ story.date }} </span>
+            <span id= tag v-for="tag in story.tags">{{ tag }}</span>
+            <span class=icons>
+            <button id= "facebook" ><img class="icon" src="facebook.png"></button>
+            <button id= "insta" ><img class="icon" src="insta.png"></button>
+            <button id= "twitter" ><img class="icon" src="twitter.png"></button>
+          </span>
+           </p>
+          <hr>
+      </div>
+    </section>
+
+    <section class="component">
+      <div id = "middle" class="safe-area">
+        <span class= "teaser" v-html="story.teaser"></span>
+        <span id= content v-html="story.content"></span>
+        <div class=random>   <div>
+        <hr id="hr">
+      </div>
+    </section>
+
+    <footer class="component">
+    <div class="safe-area">
+    <h2> Related Stories </h2>
+
+    <button id= "right" ><img class="arrow" src="arrow.png"></button>
+    <button id="left"><img  class="arrow" src="arrow.png"></button>
+    <br>
+    <!-- ul is flex container -->
+    <ul class="related-stories">
+      <!-- we also want each li as a flex container -->
+      <li class="related-story" v-for="relatedStory in relatedStories">
+
+          <div class="thumbnail">
+            <img v-bind:src="relatedStory.image.url">
+          </div>
+          <div class="title" v-on:click="load(relatedStory)">
+            {{ relatedStory.title }}
+            </div>
+      </li>
+    </ul>
+    </div>
+    </footer>
+    </div>
+
+
+
+
+    <!-- Scripts here are what load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2020spring-resources/projects/news-story-template/data.js"></script>
+
+    <!-- Script that adds Vue capability to #news-site-header (This can, and should, really be in your own .js file) -->
+    <script>
+      new Vue({
+        el: '#news-site-header',
+        data: {
+          menuIsOpen: false
+        },
+        methods: {
+          toggleTheHamburgerMenu: function() {
+            this.menuIsOpen = !this.menuIsOpen
+          }
+        }
+      })
+    </script>
+
+    <!-- Script that adds 'expandable' capability for sub-menus. -->
+    <script>
+
+      var expandables = document.getElementsByClassName('expandable');
+
+      for (let expandable of expandables) {
+        let triggerElement = expandable.querySelector('a');
+        triggerElement.addEventListener('click', function(event) {
+          event.preventDefault();
+          closeAllExcept(expandable);
+          expandable.classList.toggle('expanded');
+        })
+      }
+
+      function closeAllExcept(clickedExpandable) {
+        for (let expandable of expandables) {
+          if (expandable !== clickedExpandable) {
+            expandable.classList.remove('expanded')
+          }
+        }
+      }
+
+    </script>
+
+
+  </body>
+</html>
