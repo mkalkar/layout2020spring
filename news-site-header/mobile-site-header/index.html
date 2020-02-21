@@ -7,67 +7,9 @@
     <link href = "style.css" rel = "stylesheet">
   </head>
   <body>
+
     <!-- Site Header -->
-        <header id="news-site-header">
-        <div v-on:click="toggleTheHamburgerMenu()"><img class="button" src="hamburger.png"></div>
-          <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
-            <div v-show="menuIsOpen">
-            <nav>
-              <ul>
-                <li class="expandable">
-                  <div class=menuItem ><a href="#">News</a></div>
-                  <ul>
-                    <li>
-                      <a href="#">Headlines</a>
-                    </li>
-                    <li>
-                      <a href="#">Politics</a>
-                    </li>
-                    <li>
-                      <a href="#">Science</a>
-                    </li>
-                    <li>
-                      <a href="#">Entertainment</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="expandable">
-                  <div class=menuItem ><a href="#">Opinion</a></div>
-                  <ul>
-                    <li>
-                      <a href="#">Columns</a>
-                    </li>
-                    <li>
-                      <a href="#">Letters</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="expandable">
-                  <div class=menuItem><a  href="#">Sports</a></div>
-                  <ul>
-                    <li>
-                      <a href="#">Baseball</a>
-                    </li>
-                    <li>
-                      <a href="#">Football</a>
-                    </li>
-                    <li>
-                      <a href="#">Basketball</a>
-                    </li>
-                    <li>
-                      <a href="#">Hockey</a>
-                    </li>
-                    <li>
-                      <a href="#">Soccer</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-    <!-- Site Header -->
-    <!-- <div id="news-site-header">
+    <div id="news-site-header">
       <div v-on:click="toggleTheHamburgerMenu()"><img class="button" src="hamburger.png"></div>
       <div v-show="menuIsOpen">
         <nav>
@@ -84,7 +26,7 @@
           </ul>
         </nav>
       </div>
-    </div> -->
+    </div>
 
     <div id="news-template" v-cloak>
     <header class="component">
@@ -95,7 +37,7 @@
 
         <!-- margin here will spill out of container sometimes  -->
 
-    </div>
+      </div>
     </header>
 
     <section class="componentpink">
@@ -168,31 +110,6 @@
         }
       })
     </script>
-
-    <!-- Script that adds 'expandable' capability for sub-menus. -->
-    <script>
-
-      var expandables = document.getElementsByClassName('expandable');
-
-      for (let expandable of expandables) {
-        let triggerElement = expandable.querySelector('a');
-        triggerElement.addEventListener('click', function(event) {
-          event.preventDefault();
-          closeAllExcept(expandable);
-          expandable.classList.toggle('expanded');
-        })
-      }
-
-      function closeAllExcept(clickedExpandable) {
-        for (let expandable of expandables) {
-          if (expandable !== clickedExpandable) {
-            expandable.classList.remove('expanded')
-          }
-        }
-      }
-
-    </script>
-
 
   </body>
 </html>
