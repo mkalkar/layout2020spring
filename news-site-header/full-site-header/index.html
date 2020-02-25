@@ -16,10 +16,10 @@
           <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
             <div class=show v-show="menuIsOpen">
             <nav>
-              <ul>
+              <ul class=main-list>
                 <li class="expandable">
                   <div class=menuItem ><a href="#">News</a></div>
-                  <ul>
+                  <ul class=innerList>
                     <li>
                       <a href="#">Headlines</a>
                     </li>
@@ -36,7 +36,7 @@
                 </li>
                 <li class="expandable">
                   <div class=menuItem ><a href="#">Opinion</a></div>
-                  <ul>
+                  <ul class=innerList>
                     <li>
                       <a href="#">Columns</a>
                     </li>
@@ -47,7 +47,7 @@
                 </li>
                 <li class="expandable">
                   <div class=menuItem><a  href="#">Sports</a></div>
-                  <ul>
+                  <ul class=innerList>
                     <li>
                       <a href="#">Baseball</a>
                     </li>
@@ -161,25 +161,25 @@
     <script>
 
 
-
-      new Vue({
-        el: '#news-site-header',
-        data: {
-          menuIsOpen: false
-        },
-        methods: {
-          toggleTheHamburgerMenu: function() {
-            this.menuIsOpen = !this.menuIsOpen
-          }
-        }
-      })
+      //
+      // new Vue({
+      //   el: '#news-site-header',
+      //   data: {
+      //     menuIsOpen: false
+      //   },
+      //   methods: {
+      //     toggleTheHamburgerMenu: function() {
+      //       this.menuIsOpen = !this.menuIsOpen
+      //     }
+      //   }
+      // })
 
 
 
     </script>
 
     <!-- Script that adds 'expandable' capability for sub-menus. -->
-    <script>
+    <!-- <script>
 
 
       var expandables = document.getElementsByClassName('expandable');
@@ -202,7 +202,7 @@
       }
 
 
-    </script>
+    </script> -->
 
 
   </body>
