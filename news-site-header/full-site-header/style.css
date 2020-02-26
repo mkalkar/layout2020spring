@@ -109,6 +109,10 @@ ul {
   padding: 0;
 }
 
+#headerText{
+  padding-top: 105px;
+}
+
 /* .relatedItems{
   display:flex;
   text-align: center;
@@ -477,12 +481,17 @@ footer{
   /* width: 100%; */
   font-size: 30px;
   padding-left: 30px;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-right: 30px;
   background-color: white;
-  height: 75px;
+  height: 70px;
+
+  font-family:Impact, Charcoal, sans-serif;
 }
 
+.menuItem a{
+  color: #191970;
+}
 .expandable{
   float: left;
   background-color: white;
@@ -490,15 +499,23 @@ footer{
 
 .innerList li a{
   display: none;
+
 }
 
 .expandable:hover .innerList li a{
   display: block;
-  background-color: white;
 
+  font-family:Tahoma, Geneva, sans-serifs
   position: relative;
+  padding: 12px;
 
 }
+
+.expandable li a:hover{
+  background-color: lightgrey;
+
+}
+
 
 
 
@@ -506,8 +523,25 @@ footer{
   background-color: rgb(173, 216, 230);
 }
 
+.expandable li a:hover .menuItem{
+  background-color: rgb(173, 216, 230);
+}
 
-
+.login{
+  float: right;
+  position: relative;
+  bottom: 55px;
+  right: 5px;
+  background-color: #191970;
+  border: none;
+  color: white;
+  padding: 15px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  font-weight:bold;
+}
 .ya{
   display: none;
 }
@@ -533,22 +567,7 @@ footer{
 } */
 
 
-.login{
-  float: right;
-  position: relative;
-  bottom: 55px;
-  right: 5px;
-  background-color: #191970;
-  border: none;
-  color: white;
-  padding: 15px 17px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 12px;
-  font-weight:bold;
 
-}
 
 .name{
   position: absolute;
@@ -556,9 +575,12 @@ footer{
   left: 50%;
   transform: translate(-50%, -50%);
   font-family:Impact, Charcoal, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
 
 }
 
+.loginn{
+  display: block;
+}
 
 }
