@@ -12,7 +12,7 @@ body{
 .component{
  padding-top: 30px;
  padding-bottom: 30px;
-   
+
 
 }
 
@@ -474,10 +474,11 @@ footer{
 
 
 .menuItem{
-  width: 100%;
+  /* width: 100%; */
   font-size: 30px;
   padding-left: 30px;
   padding-top: 15px;
+  padding-right: 30px;
   background-color: white;
   height: 75px;
 }
@@ -494,10 +495,12 @@ footer{
 .expandable:hover .innerList li a{
   display: block;
   background-color: white;
+
   position: relative;
-  width: 25%;
 
 }
+
+
 
 .menuItem:hover{
   background-color: rgb(173, 216, 230);
@@ -541,7 +544,7 @@ footer{
   padding: 15px 17px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 12px;
   font-weight:bold;
 
