@@ -505,7 +505,7 @@ footer{
 .expandable:hover .innerList li a{
   display: block;
 
-  font-family:Tahoma, Geneva, sans-serifs
+  font-family:Tahoma, Geneva, sans-serifs;
   position: relative;
   padding: 12px;
 
@@ -523,7 +523,7 @@ footer{
   background-color: rgb(173, 216, 230);
 }
 
-.expandable li a:hover .menuItem{
+.expandable li a:hover .menuItem:hover{
   background-color: rgb(173, 216, 230);
 }
 
@@ -566,8 +566,6 @@ header.component img{
 .expanded .menuItem{
   background-color: rgb(173, 216, 230);
 } */
-
-
 
 
 .name{
