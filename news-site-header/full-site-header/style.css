@@ -479,7 +479,7 @@ footer{
 
 .menuItem{
   /* width: 100%; */
-  font-size: 30px;
+  font-size: 35px;
   padding-left: 30px;
   padding-top: 20px;
   padding-right: 30px;
@@ -546,8 +546,9 @@ footer{
   display: none;
 }
 
-
-
+header.component img{
+  object-position: top;
+}
 /* .expandable li{
   display: none;
   background: white;
@@ -582,5 +583,7 @@ footer{
 .loginn{
   display: block;
 }
+
+
 
 }
