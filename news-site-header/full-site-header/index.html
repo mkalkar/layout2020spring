@@ -11,10 +11,10 @@
         <header id="news-site-header">
         <div v-on:click="toggleTheHamburgerMenu()"><img class="ya" src="hamburger.png"></div>
         <span class= loginn><button class=login>LOGIN</button></span>
-        <span class=name> Real News</span>
+        <span class=name> Real News <span id=big>in Real Time</span></span>
 
           <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
-            <div class=show v-show="menuIsOpen">
+            <div class="mobileMenu" v-bind:class="{'show':menuIsOpen}">
             <nav>
               <ul class=main-list>
                 <li class="expandable">
@@ -42,6 +42,46 @@
                     </li>
                     <li>
                       <a href="#">Letters</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <ul class=innerList>
+                    <li>
+                      <a href="#">Baseball</a>
+                    </li>
+                    <li>
+                      <a href="#">Football</a>
+                    </li>
+                    <li>
+                      <a href="#">Basketball</a>
+                    </li>
+                    <li>
+                      <a href="#">Hockey</a>
+                    </li>
+                    <li>
+                      <a href="#">Soccer</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <ul class=innerList>
+                    <li>
+                      <a href="#">Baseball</a>
+                    </li>
+                    <li>
+                      <a href="#">Football</a>
+                    </li>
+                    <li>
+                      <a href="#">Basketball</a>
+                    </li>
+                    <li>
+                      <a href="#">Hockey</a>
+                    </li>
+                    <li>
+                      <a href="#">Soccer</a>
                     </li>
                   </ul>
                 </li>
@@ -162,29 +202,29 @@
 
 
       //
-      // new Vue({
-      //   el: '#news-site-header',
-      //   data: {
-      //     menuIsOpen: false
-      //   },
-      //   methods: {
-      //     toggleTheHamburgerMenu: function() {
-      //       this.menuIsOpen = !this.menuIsOpen
-      //     }
-      //   }
-      // })
+      new Vue({
+        el: '#news-site-header',
+        data: {
+          menuIsOpen: false
+        },
+        methods: {
+          toggleTheHamburgerMenu: function() {
+            this.menuIsOpen = !this.menuIsOpen
+          }
+        }
+      })
 
 
 
     </script>
 
     <!-- Script that adds 'expandable' capability for sub-menus. -->
-    <!-- <script>
+     <script>
 
 
       var expandables = document.getElementsByClassName('expandable');
 
-      for (let expandable of expandables) {
+       for (let expandable of expandables) {
         let triggerElement = expandable.querySelector('a');
         triggerElement.addEventListener('click', function(event) {
           event.preventDefault();
