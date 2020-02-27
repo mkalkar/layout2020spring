@@ -10,18 +10,16 @@
     <!-- Site Header -->
         <header id="news-site-header">
         <div v-on:click="toggleTheHamburgerMenu()"><img class="ya" src="hamburger.png"></div>
-        <button class=login>LOGIN</button>
-        
-        <span class=name> Real News</span>
-
+        <span class= loginn><button class=login>LOGIN</button></span>
+        <span class=name> Real News <span id=big>in Real Time</span></span>
 
           <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
-            <div class=show v-show="menuIsOpen">
+            <div class="mobileMenu" v-bind:class="{'show':menuIsOpen}">
             <nav>
-              <ul>
+              <ul class=main-list>
                 <li class="expandable">
                   <div class=menuItem ><a href="#">News</a></div>
-                  <ul>
+                  <ul class=innerList>
                     <li>
                       <a href="#">Headlines</a>
                     </li>
@@ -38,7 +36,7 @@
                 </li>
                 <li class="expandable">
                   <div class=menuItem ><a href="#">Opinion</a></div>
-                  <ul>
+                  <ul class=innerList>
                     <li>
                       <a href="#">Columns</a>
                     </li>
@@ -49,7 +47,47 @@
                 </li>
                 <li class="expandable">
                   <div class=menuItem><a  href="#">Sports</a></div>
-                  <ul>
+                  <ul class=innerList>
+                    <li>
+                      <a href="#">Baseball</a>
+                    </li>
+                    <li>
+                      <a href="#">Football</a>
+                    </li>
+                    <li>
+                      <a href="#">Basketball</a>
+                    </li>
+                    <li>
+                      <a href="#">Hockey</a>
+                    </li>
+                    <li>
+                      <a href="#">Soccer</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <ul class=innerList>
+                    <li>
+                      <a href="#">Baseball</a>
+                    </li>
+                    <li>
+                      <a href="#">Football</a>
+                    </li>
+                    <li>
+                      <a href="#">Basketball</a>
+                    </li>
+                    <li>
+                      <a href="#">Hockey</a>
+                    </li>
+                    <li>
+                      <a href="#">Soccer</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="expandable">
+                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <ul class=innerList>
                     <li>
                       <a href="#">Baseball</a>
                     </li>
@@ -163,7 +201,7 @@
     <script>
 
 
-
+      //
       new Vue({
         el: '#news-site-header',
         data: {
@@ -181,12 +219,12 @@
     </script>
 
     <!-- Script that adds 'expandable' capability for sub-menus. -->
-    <script>
+     <script>
 
 
       var expandables = document.getElementsByClassName('expandable');
 
-      for (let expandable of expandables) {
+       for (let expandable of expandables) {
         let triggerElement = expandable.querySelector('a');
         triggerElement.addEventListener('click', function(event) {
           event.preventDefault();
@@ -204,7 +242,7 @@
       }
 
 
-    </script>
+    </script> -->
 
 
   </body>
