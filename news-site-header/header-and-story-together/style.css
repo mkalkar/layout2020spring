@@ -6,6 +6,7 @@ body{
 
 #imgmain{
   filter: brightness(60%) contrast(90%);
+  
   /* margin-top: 10px; */
 }
 
