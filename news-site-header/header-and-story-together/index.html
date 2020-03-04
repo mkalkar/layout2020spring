@@ -4,8 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Story Template</title>
     <style>[v-cloak] { display: none; } img {max-width: 100%;}</style>
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
 
-    
+
+
     <link href = "style.css" rel = "stylesheet">
 
   </head>
@@ -20,7 +22,7 @@
 
           <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
             <div class="mobileMenu" v-bind:class="{'show':menuIsOpen}">
-            <nav>
+            <nav class=nav>
               <ul class=main-list>
                 <li class="expandable">
                   <div class=menuItem ><a href="#">News</a></div>
@@ -71,42 +73,33 @@
                   </ul>
                 </li>
                 <li class="expandable">
-                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <div class=menuItem><a  href="#">Music</a></div>
                   <ul class=innerList>
                     <li>
-                      <a href="#">Baseball</a>
+                      <a href="#">Pop</a>
                     </li>
                     <li>
-                      <a href="#">Football</a>
+                      <a href="#">Hip-Hop</a>
                     </li>
                     <li>
-                      <a href="#">Basketball</a>
-                    </li>
-                    <li>
-                      <a href="#">Hockey</a>
-                    </li>
-                    <li>
-                      <a href="#">Soccer</a>
+                      <a href="#">Alternative</a>
                     </li>
                   </ul>
                 </li>
                 <li class="expandable">
-                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <div class=menuItem><a  href="#">Global</a></div>
                   <ul class=innerList>
                     <li>
-                      <a href="#">Baseball</a>
+                      <a href="#">Asia</a>
                     </li>
                     <li>
-                      <a href="#">Football</a>
+                      <a href="#">Europe</a>
                     </li>
                     <li>
-                      <a href="#">Basketball</a>
+                      <a href="#">South America</a>
                     </li>
                     <li>
-                      <a href="#">Hockey</a>
-                    </li>
-                    <li>
-                      <a href="#">Soccer</a>
+                      <a href="#">Africa</a>
                     </li>
                   </ul>
                 </li>
@@ -193,6 +186,12 @@
     </ul>
     </div>
     </footer>
+
+    <footer class=foot>
+
+
+    </footer>
+
     </div>
 
 
@@ -247,7 +246,7 @@
       }
 
 
-    </script> -->
+    </script>
 
 
   </body>
