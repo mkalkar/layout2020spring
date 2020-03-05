@@ -6,6 +6,7 @@
     <style>[v-cloak] { display: none; } img {max-width: 100%;}</style>
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
  <script src="https://use.fontawesome.com/f22547db8e.js"></script>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <link href = "style.css" rel = "stylesheet">
@@ -19,7 +20,7 @@
     <!-- Site Header -->
 
         <header id="news-site-header">
-        <div class=iitem v-on:click="toggleTheHamburgerMenu()"><img class="ya" src="burgerr.png"></div>
+        <div v-on:click="toggleTheHamburgerMenu()"><img class="ya" src="burgerr.png"></div>
 
           <span class=name> Real News</span>
           <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
@@ -109,7 +110,9 @@
                   </ul>
                 </li>
                   <span class=loginn><button class=login>LOGIN</button></span>
+
               </ul>
+
 
 
 
@@ -118,8 +121,10 @@
           </div>
 
 
-
+          <span class=mobile_search><img src="search.png"></span>
+          <span class=mobile_search2><img src="person.png"></span>
         </header>
+
 
 
     <!-- Site Header -->
@@ -181,7 +186,7 @@
       </div>
     </section>
 
-    <footer class="component">
+    <footer id=ffff class="component">
     <div class="safe-area">
     <h2> Related Stories </h2>
 
@@ -204,7 +209,10 @@
     </div>
     </footer>
 
+
+    <div id=outer><input id=in type="text" placeholder="Search.."></div>
     <footer class=foot>
+
       <ul id=one class="grid-item">
         <li><h3>News</h3></li>
         <li>Headlines</li>
@@ -243,7 +251,7 @@
 
     </footer>
     <footer class=foot_two>
-      text text text
+      <span> Copyright Real News, Inc</span>
     </footer>
 
     </div>

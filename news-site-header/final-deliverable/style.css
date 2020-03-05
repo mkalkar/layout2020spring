@@ -248,7 +248,7 @@ a{
   background-color: rgb(255,255,255); */
   /* padding: 10px; */
   /* box-shadow: 3px -1px 18px 3px rgba(71,70,71,0.75); */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
 
 
 }
@@ -286,8 +286,7 @@ a{
   /* margin-top: 0; */
   padding: 8px;
   position: relative;
-  color: #388087;
-
+  color: black;
   /* padding-top: 0; */
 
 }
@@ -298,7 +297,7 @@ a{
 }
 
 h2{
-  color: #388087;
+  color: black;
   font-family:Impact, Charcoal, sans-serif;
   font-size: 40px
 }
@@ -336,7 +335,7 @@ button:hover{
    margin-top: 100px;
 }
 
-footer{
+#ffff{
   margin-top: -25px;
 }
 
@@ -363,12 +362,34 @@ footer{
 .foot{
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+
   background-color: black;
   height: 400px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
+#in{
+  width: 50%;
+  padding: 8px;
+
+}
+
+input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  color: black;
+}
+
+#outer{
+  background-color: black;
+  display: block;
+  text-align: center;
+  padding: 10px;
+
+}
 
 .grid-item{
   width: 32%;
@@ -386,12 +407,6 @@ footer{
   font-size: 22px;
 }
 
-.foot_two{
-  height: 12px;
-  text-align: center;
-  background-color:black ;
-  color: white;
-}
 
 
 
@@ -417,6 +432,35 @@ footer{
 
   }
 
+.mobile_search img{
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 50px;
+  margin-top: -40px;
+
+}
+.mobile_search2 img{
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+  margin-top: -40px;
+}
+
+.mobile_search2:hover{
+  cursor: pointer;
+}
+
+.mobile_search:hover{
+  cursor: pointer;
+}
+
+#in, #outer{
+  display: none;
+}
   .menuItem a{
     color: #F6F6F2;
     font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
@@ -459,6 +503,10 @@ footer{
     height: 40px;
     margin-top: 25px;
     margin-left: 10px;
+  }
+
+  .ya:hover{
+    cursor: pointer;
   }
 
 
@@ -517,6 +565,7 @@ footer{
     font-family: 'Lobster', cursive;
     font-size: 60px;
     color: #F6F6F2;
+    
 
   }
   #big{
@@ -547,6 +596,15 @@ footer{
     font-size: 12px;
     background-color:black ;
     color: white;
+
+  }
+
+  .foot_two span{
+      margin-right: 10px;
+  }
+
+  #middle{
+    font-size: 110%;
   }
 
 }
@@ -576,6 +634,13 @@ footer{
     flex-wrap: nowrap;
     width: 100%;
 
+  }
+
+  .mobile_search{
+    display: none;
+  }
+  .mobile_search2{
+    display: none;
   }
 
 .mobileMenu{
@@ -681,9 +746,14 @@ footer{
   text-decoration: underline bold;
 }
 
-#news-site-header{
+.foot_two{
 
+  text-align: center;
+  background-color:black;
+  color: white;
+  padding: 10px;
 }
+
 
 }
 
