@@ -636,6 +636,10 @@ input[type=text] {
 
   }
 
+  #middle{
+    font-size: 110%;
+  }
+
   .mobile_search{
     display: none;
   }
