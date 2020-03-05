@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Story Template</title>
     <style>[v-cloak] { display: none; } img {max-width: 100%;}</style>
-    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
-
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+ <script src="https://use.fontawesome.com/f22547db8e.js"></script>
 
 
     <link href = "style.css" rel = "stylesheet">
@@ -17,18 +17,20 @@
   <body>
 
     <!-- Site Header -->
-        <header id="news-site-header">
-        <div v-on:click="toggleTheHamburgerMenu()"><img class="ya" src="hamburger.png"></div>
-        <span class= loginn><button class=login>LOGIN</button></span>
-        <span class=name> Real News <span id=big>in Real Time</span></span>
 
+        <header id="news-site-header">
+        <div class=iitem v-on:click="toggleTheHamburgerMenu()"><img class="ya" src="burgerr.png"></div>
+
+          <span class=name> Real News</span>
           <!-- <div class="menu-container" v-bind:class="{ 'menu-is-open': menuIsOpen }"> -->
             <div class="mobileMenu" v-bind:class="{'show':menuIsOpen}">
             <nav class=nav>
               <ul class=main-list>
                 <li class="expandable">
-                  <div class=menuItem ><a href="#">News</a></div>
+                  <div class=menuItem ><a href="#"><span class=m>|</span>   News</a></div>
+
                   <ul class=innerList>
+
                     <li>
                       <a href="#">Headlines</a>
                     </li>
@@ -43,8 +45,9 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="expandable">
-                  <div class=menuItem ><a href="#">Opinion</a></div>
+                  <div class=menuItem ><a href="#"><span class=m>|</span>   Opinion</a></div>
                   <ul class=innerList>
                     <li>
                       <a href="#">Columns</a>
@@ -55,7 +58,7 @@
                   </ul>
                 </li>
                 <li class="expandable">
-                  <div class=menuItem><a  href="#">Sports</a></div>
+                  <div class=menuItem><a  href="#"><span class=m>|</span>   Sports</a></div>
                   <ul class=innerList>
                     <li>
                       <a href="#">Baseball</a>
@@ -75,7 +78,7 @@
                   </ul>
                 </li>
                 <li class="expandable">
-                  <div class=menuItem><a  href="#">Music</a></div>
+                  <div class=menuItem><a  href="#"><span class=m>|</span>   Music</a></div>
                   <ul class=innerList>
                     <li>
                       <a href="#">Pop</a>
@@ -89,7 +92,7 @@
                   </ul>
                 </li>
                 <li class="expandable">
-                  <div class=menuItem><a  href="#">Global</a></div>
+                  <div class=menuItem><a  href="#"><span class=m>|</span>   Global</a></div>
                   <ul class=innerList>
                     <li>
                       <a href="#">Asia</a>
@@ -105,10 +108,20 @@
                     </li>
                   </ul>
                 </li>
+                  <span class=loginn><button class=login>LOGIN</button></span>
               </ul>
+
+
+
             </nav>
+
           </div>
+
+
+
         </header>
+
+
     <!-- Site Header -->
     <!-- <div id="news-site-header">
       <div v-on:click="toggleTheHamburgerMenu()"><img class="button" src="hamburger.png"></div>
@@ -130,9 +143,11 @@
     </div> -->
 
     <div id="news-template" v-cloak>
+
     <header class="component">
       <img id = imgmain v-bind:src="story.image.url">
       <div class="safe-area" id=headerText>
+
           <h1 id= head> {{ story.title }} </h1>
           <h4 id= subtitle>{{ story.subtitle }}</h4>
 
@@ -190,8 +205,45 @@
     </footer>
 
     <footer class=foot>
+      <ul id=one class="grid-item">
+        <li><h3>News</h3></li>
+        <li>Headlines</li>
+        <li>Politics</li>
+        <li>Science</li>
+        <li>Entertainment</li>
+        <li></li>
+        <li><h3>Opinion</h3></li>
+        <li>Columns</li>
+        <li>Letters</li>
+      </ul>
+      <ul id=two class="grid-item">
+        <li><h3>Sports</h3></li>
+        <li>Baseball</li>
+        <li>Football</li>
+        <li>Basketball</li>
+        <li>Hockey</li>
+        <li>Soccer</li>
+        <li><h3>Music</h3></li>
+        <li>Pop</li>
+        <li>Hip-Hop</li>
+        <li>Alternative</li>
+      </ul>
 
+      <ul id=three class="grid-item">
+        <li><h3>Global</h3></li>
+        <li>Asia</li>
+        <li>Europe</li>
+        <li>South America</li>
+        <li>Africa</li>
+        <li><h3>About Real News</h3></li>
+        <li>Contact Us</li>
+        <li>Meet the Authors</li>
+        <li>Locations</li>
+      </ul>
 
+    </footer>
+    <footer class=foot_two>
+      text text text
     </footer>
 
     </div>
