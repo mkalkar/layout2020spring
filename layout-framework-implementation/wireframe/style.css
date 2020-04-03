@@ -1,0 +1,11 @@
+#main{
+  background-color: pink;
+}
+
+#footer{
+  background-color: lightblue;
+}
+
+.img{
+  object-fit: contain;
+}
