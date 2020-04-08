@@ -1,0 +1,15 @@
+img{
+  height: 200px;
+}
+
+#row1, #row2{
+  margin-top: 50px;
+}
+
+.navbar-brand{
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.nav-link{
+  font-family: "Arial Black", Gadget, sans-serif;
+}
