@@ -1,0 +1,51 @@
+#main{
+
+}
+
+
+
+.carousel-item{
+  height: 600px;
+}
+
+img{
+  height: 800px;
+}
+
+#footer{
+  background-color: #17252A;
+  margin-top: 30px;
+}
+
+.navbar-brand{
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #3AAFA9;
+}
+
+.navbar-brand:hover{
+  color: #2B7A78;
+}
+
+.nav-link{
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #17252A;
+}
+
+.nav-link:hover{
+  color: #2B7A78;
+}
+
+.navbar{
+  height: 60px;
+  background-color: #FEFFFF;
+}
+
+#body{
+  background-color: #DEF2F1;
+}
+
+.card-img{
+  width: 80px;
+  height: 400px;
+  padding: 15px;
+}
