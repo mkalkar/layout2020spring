@@ -1,0 +1,174 @@
+body {
+  position: relative;
+
+
+}
+
+#myNavbar{
+  width: 100%;
+
+}
+
+
+
+#picMe{
+  padding-top:50px;
+  height:500px;
+  color: black;
+  background-color: white;
+}
+
+#introduction{
+padding-top:5px;
+  height:600px;
+  color: black;
+  background-color: white;
+
+}
+
+#secondary_Research{
+  padding-top:5px;
+  height:1400px;
+  color: black;
+  background-color: white ;
+}
+
+#similar_Programs{
+  padding-top:5px;
+  height:500px;
+  color: black;
+  background-color: white;
+}
+
+#initial_Ideas{
+  padding-top:5px;
+  height:600px;
+  color: black;
+  background-color: white;
+}
+
+#our_Focus{
+  padding-top:5px;
+  height:1000px;
+  color: black;
+  background-color: white;
+}
+
+#target{
+  padding-top:5px;
+  height:600px;
+  color: black;
+  background-color: white;
+}
+
+#personas{
+  padding-top:5px;
+  height:8500px;
+  color: black;
+  background-color: white;
+}
+
+#wireframes{
+  padding-top:5px;
+  height:6550;
+  color: black;
+  background-color: white;
+}
+
+#conclusion{
+  padding-top: px;
+  height:1200px;
+  color: black;
+  background-color: white;
+}
+
+
+.container-fluid h1{
+  color: rgb(38, 77, 115);
+  font-weight:bold;
+  font-size: 30px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+.container-fluid h3{
+  color: black;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  color: rgb(38, 77, 115);
+
+}
+
+.container-fluid h2{
+  color: black;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  color: rgb(38, 77, 115);
+
+}
+
+.container-fluid p{
+  font-size: 19px;
+  margin-left: 20px;
+  margin-right: 40px;
+  line-height: .7cm;
+  color: rgb(96,96,96);
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+#logo{
+  margin-top:20px;
+  width: 300px;
+  height: 300px;
+}
+
+#people{
+  margin-top: 200px;
+}
+
+#title{
+  color: white;
+  padding: 5px;
+  font-size: 40px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+.container-fluid li{
+  font-size: 19px;
+  color: rgb(96,96,96);
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+.persona{
+  width: 80%;
+}
+
+.sitemap{
+  width: 80%;
+}
+
+#highlight{
+  background-color: rgb(83, 140, 198);
+  height: 60px;
+
+}
+
+.gap{
+  height: 40px;
+  background-color:rgb(121, 166, 210);
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.wire{
+  width: 80%;
+}
+
+blockquote{
+  font-weight:bold;
+}
+
+#save{
+  width: 320px;
+  height: 280px;
+}
