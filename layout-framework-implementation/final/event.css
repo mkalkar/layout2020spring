@@ -1,0 +1,81 @@
+#footer{
+  background-color: #17252A;
+  margin-top: 350px;
+}
+
+.navbar-brand{
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #3AAFA9;
+}
+
+.navbar-brand:hover{
+  color: #2B7A78;
+}
+
+.nav-link{
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #17252A;
+}
+
+.nav-link:hover{
+  color: #2B7A78;
+}
+
+.navbar{
+  height: 60px;
+  background-color: #FEFFFF;
+}
+
+#body{
+  background-color: #DEF2F1;
+}
+
+.media{
+  margin-top: 40px;
+}
+
+/* .media img{
+  height: 90px;
+  width: 90px;
+} */
+
+.card-img{
+  /* width: 80px;
+  height: 400px;
+  padding: 15px; */
+
+  object-fit: contain;
+
+}
+
+#gif{
+  margin-top: 40px;
+
+}
+
+.media-body h3{
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#wics{
+  object-fit: contain;
+}
+
+
+#bold{
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#card{
+    background-color: #DEF2F1;
+    border:none;
+}
+
+.events{
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin-top: 30px;
+}
+
+.media{
+  margin-top: 80px;
+}
