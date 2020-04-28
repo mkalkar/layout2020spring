@@ -172,3 +172,22 @@ blockquote{
   width: 320px;
   height: 280px;
 }
+
+.person{
+  width: 30px;
+  height: 30px;
+}
+
+.col-sm-5 p{
+  font-size: 19px;
+  color: rgb(96,96,96);
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+#green{
+  color: green;
+}
+
+#yellow{
+  color: yellow;
+}
