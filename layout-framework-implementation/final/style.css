@@ -123,3 +123,12 @@ img{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 18px;
 }
+
+.mainImg{
+  width: 100%;
+}
+
+#con{
+  padding-left: 0px;
+  padding-right: 0px;
+}
