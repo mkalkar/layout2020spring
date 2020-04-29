@@ -64,3 +64,22 @@ h2 .btn-link{
 h2 .btn-link:hover{
   color: #3AAFA9;
 }
+
+.icons{
+  margin-top: 10px;
+  background-color: #17252A;
+  padding:5px;
+  text-align: center;
+  height: 50px;
+  width:50px;
+  background-color:
+}
+
+#copy{
+  color: white;
+}
+
+.form-group{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
+}

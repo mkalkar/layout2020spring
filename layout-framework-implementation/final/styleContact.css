@@ -39,7 +39,7 @@ img{
 }
 
 #exec{
-    font-family: "Arial Black", Gadget, sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
     margin-top: 5px;
     margin-bottom: 20px;
 }
@@ -57,4 +57,30 @@ img{
 .btn{
   background-color: #3AAFA9;
   color: white;
+}
+
+.icons{
+  margin-top: 10px;
+  background-color: #17252A;
+  padding:5px;
+  text-align: center;
+  height: 50px;
+  width:50px;
+  background-color:
+}
+
+#copy{
+  color: white;
+}
+
+#row2{
+  margin-bottom: 150px;
+}
+
+.card-body{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+address{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }

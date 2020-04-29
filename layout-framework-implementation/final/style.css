@@ -104,6 +104,22 @@ img{
   cursor: pointer;
 }
 
-#main p{
 
+.icons{
+  margin-top: 10px;
+  background-color: #17252A;
+  padding:5px;
+  text-align: center;
+  height: 50px;
+  width:50px;
+  background-color:
+}
+
+#copy{
+  color: white;
+}
+
+#main p{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
 }
