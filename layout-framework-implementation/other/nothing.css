@@ -13,73 +13,74 @@ body {
 
 #picMe{
   padding-top:50px;
-  height:500px;
+  height:370px;
   color: black;
   background-color: white;
 }
 
 #introduction{
-padding-top:5px;
-  height:600px;
+padding-top:50px;
+  height:500px;
   color: black;
   background-color: white;
 
 }
 
 #secondary_Research{
-  padding-top:5px;
-  height:1400px;
+  padding-top:60px;
+  height:2870px;
   color: black;
   background-color: white ;
 }
 
 #similar_Programs{
-  padding-top:5px;
-  height:500px;
+  padding-top:50px;
+  height:1000px;
   color: black;
   background-color: white;
 }
 
 #initial_Ideas{
-  padding-top:5px;
-  height:600px;
+  padding-top:50px;
+  height:500px;
   color: black;
   background-color: white;
 }
 
 #our_Focus{
-  padding-top:5px;
+  padding-top:50px;
   height:1000px;
   color: black;
   background-color: white;
 }
 
 #target{
-  padding-top:5px;
-  height:600px;
+  padding-top:50px;
+  height:650px;
   color: black;
   background-color: white;
 }
 
 #personas{
-  padding-top:5px;
-  height:8500px;
+  padding-top:50px;
+  height:7450px;
   color: black;
   background-color: white;
 }
 
 #wireframes{
-  padding-top:5px;
+  padding-top:50px;
   height:6550;
   color: black;
   background-color: white;
 }
 
 #conclusion{
-  padding-top: 5px;
-  height:1500px;
+  padding-top: 50px;
+  height:1700px;
   color: black;
   background-color: white;
+
 }
 
 
@@ -117,8 +118,7 @@ padding-top:5px;
 
 #logo{
   margin-top:20px;
-  width: 300px;
-  height: 300px;
+  width: 60%;
 }
 
 #people{
@@ -130,6 +130,7 @@ padding-top:5px;
   padding: 5px;
   font-size: 40px;
   font-family:"Trebuchet MS", Helvetica, sans-serif;
+
 }
 
 .container-fluid li{
@@ -143,7 +144,7 @@ padding-top:5px;
 }
 
 .sitemap{
-  width: 80%;
+  width: 100%;
 }
 
 #highlight{
@@ -161,7 +162,7 @@ padding-top:5px;
 }
 
 .wire{
-  width: 80%;
+  width: 99%;
 }
 
 blockquote{
@@ -169,8 +170,7 @@ blockquote{
 }
 
 #save{
-  width: 320px;
-  height: 280px;
+  width: 30%;
 }
 
 .person{
@@ -189,5 +189,38 @@ blockquote{
 }
 
 #yellow{
-  color: yellow;
+  color: #FFCC33;
+}
+
+#crown{
+  width: 70%;
+  text-align: center;
+  margin-left: 20px;
+}
+
+#decline{
+  width: 50%;
+}
+
+#vol{
+  width: 40%;
+  margin-left: 20px;
+}
+
+.story{
+  width: 80%;
+}
+
+#aftermeals{
+  width: 40%;
+  margin-left: 20px;
+}
+
+#meals{
+  margin-left: 20px;
+  width: 40%;
+}
+
+.al{
+  width: 7%;
 }
