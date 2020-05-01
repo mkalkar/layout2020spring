@@ -155,7 +155,7 @@ body{
 }
 
 .masthead {
-  height: 100vh;
+  height: 85vh;
   min-height: 500px;
   background-image: url("design.png");
   background-size: cover;
