@@ -120,10 +120,9 @@ address{
 #exec{
   font-size: 20px;
 }
+}
 
-
-
-
-
-
+.icons:hover{
+  cursor: pointer;
+  opacity: .8;
 }

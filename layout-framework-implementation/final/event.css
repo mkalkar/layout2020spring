@@ -134,3 +134,8 @@
   border-width: 1px;
   border-color: lightgray; */
 }
+
+.icons:hover{
+  cursor: pointer;
+  opacity: .8;
+}

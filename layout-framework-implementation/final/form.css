@@ -105,3 +105,8 @@ form{
   /* border-color: lightgray; */
     box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.08);
 }
+
+.icons:hover{
+  cursor: pointer;
+  opacity: .8;
+}
