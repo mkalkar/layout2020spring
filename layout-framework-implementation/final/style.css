@@ -19,7 +19,7 @@ img{
 
 .navbar-brand{
   font-family: "Arial Black", Gadget, sans-serif;
-  color: #3AAFA9;
+  color: #17252A;
 }
 
 .navbar-brand:hover{
@@ -29,6 +29,7 @@ img{
 .nav-link{
   font-family: "Arial Black", Gadget, sans-serif;
   color: #17252A;
+
 }
 
 .nav-link:hover{
@@ -37,7 +38,8 @@ img{
 
 .navbar{
   height: 60px;
-  background-color: #FEFFFF;
+  background-color: #DEF2F1;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
 }
 
 #body{
@@ -81,11 +83,13 @@ img{
 }
 
 .btn:hover{
-    color:#17252A;
+    background-color:#DEF2F1;
+    color: #2B7A78;
 }
 
 #h{
   font-family: "Arial Black", Gadget, sans-serif;
+  color:#2B7A78
 }
 
 #updates{
@@ -136,8 +140,8 @@ img{
 }
 
 .nav-item{
-  background-color: white;
-  padding: 5px;
+  background-color: #DEF2F1;
+  padding: 10px;
 }
 
 #lead{
@@ -149,3 +153,58 @@ img{
 body{
   color: darkgrey;
 }
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("design.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom-style: solid;
+  border-color: lightgray;
+}
+
+.title{
+  color: white;
+  font-size: 50px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.lead{
+  color: white;
+}
+
+.display{
+  color: white;
+}
+
+/* .masthead {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+} */
+
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.test{
+  height: 100px;
+  background: linear-gradient(-45deg, #3AAFA9, );
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+} */
+
+/* #top{
+  width: 150px;
+  height: 50px;
+} */
