@@ -28,7 +28,7 @@
 }
 
 #body{
-  background-color: #FEFFFF;
+  background-color: snow;
     margin-top: 90px;
 }
 
@@ -104,6 +104,7 @@ form{
   /* border-width: 2px; */
   /* border-color: lightgray; */
     box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.08);
+    background-color: white;
 }
 
 .icons:hover{

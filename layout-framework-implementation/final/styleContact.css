@@ -126,3 +126,7 @@ address{
   cursor: pointer;
   opacity: .8;
 }
+
+.btn:hover{
+  color: #DEF2F1;
+}
